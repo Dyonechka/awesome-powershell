@@ -1,0 +1,5 @@
+Get-AdComputer -SearchBase "dc=domain, dc=ru" -Filter * -Properties CanonicalName | Where { $_.Name -like "*А*" -or $_.Name -like "*Б*" -or $_.Name -like "*В*"`
+-or $_.Name -like "*Г*" -or $_.Name -like "*Д*" -or $_.Name -like "*Е*" -or $_.Name -like "*Ж*" -or $_.Name -like "*З*" -or $_.Name -like "*И*" -or $_.Name -like "*К*"`
+-or $_.Name -like "*Л*" -or $_.Name -like "*М*" -or $_.Name -like "*Н*" -or $_.Name -like "*О*" -or $_.Name -like "*П*" -or $_.Name -like "*Р*" -or $_.Name -like "*С*"`
+-or $_.Name -like "*Т*" -or $_.Name -like "*У*" -or $_.Name -like "*Ф*" -or $_.Name -like "*Х*" -or $_.Name -like "*Ц*" -or $_.Name -like "*Ч*" -or $_.Name -like "*Ш*"`
+-or $_.Name -like "*Щ*" -or $_.Name -like "*Э*" -or $_.Name -like "*Ю*" -or $_.Name -like "*Я*" } | select name, CanonicalName
